@@ -1,9 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { MyntraFilter } from "./components/MyntraFilter";
+import { MultipleImgUploader } from "./components/MultipleImgUploader";
+import { useEffect, useState } from "react";
 
 function App() {
   return (
     <>
-      <h1>Helo</h1>
+      <Routes>
+        <Route path="/myntra" element={<MyntraFilter />} />
+      </Routes>
     </>
   );
 }
